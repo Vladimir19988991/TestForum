@@ -1,0 +1,837 @@
+body{
+   color:white;
+   background-color: black;
+}
+
+header{
+   padding: 0.51%;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.headContainer{
+   padding: 1%;
+   border-radius: 5px;
+   background-color: rgb(29, 29, 29);
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.mainLogotypeItem{
+   display: flex;
+   align-items: center;
+   background: url('../img/mainLogo.png') no-repeat ;
+   background-size: 22px 22px;
+   background-position: left;
+   font-size: 17px;
+   width: 70%;
+   max-height: 100% ;
+}
+.mainLogotypeItem .know{
+   font-weight: bold;
+   color: orangered;
+   max-width: 100%;
+   padding: 2% 2%;
+   padding-left: 10%;
+   cursor: default ;
+}
+
+/*------- Меню в башке сайта--------- */
+
+.menuItem{
+
+   display: flex;
+
+   justify-content: space-between;
+   align-items: center;
+
+   width: 35%;
+  
+}
+
+.homeButton{
+   display: flex;
+   align-items: center;
+   
+   width: 10%;
+   transition: 195ms;
+}
+
+.homeButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+
+.calendarButton{
+  
+   width: 10%;
+   transition: 195ms;
+}
+
+.calendarButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+
+.groupButton{
+  
+   width: 10%;
+   transition: 195ms;
+}
+
+.groupButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+
+.podcastButton{
+   
+   width: 10%;
+   transition: 195ms;
+}
+
+.podcastButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+
+.interviewButton{
+  
+   width: 10%;
+   transition: 195ms;
+}
+
+.interviewButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+
+.menuItem img{
+   padding: 20%;
+
+   max-width: 100%;
+}
+
+
+/*------Окно поиска в башке-------*/
+
+
+.windowSearchContainer{
+
+   padding: 0 2%;
+   width: 30%;
+
+}
+.windowSearchContainer input{
+   background-color: rgb(176, 176, 176);
+   background-image: url('../img/searchWindow/Group 4.png');
+   background-position: 90%;
+   background-size: 10px;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+   max-width: 100%;
+   padding: 0 2%;
+}
+
+
+/*--------Информация о текущем аккаунте--------*/
+
+
+.accountContainer{
+   
+   display: flex;
+   
+   min-width: 19%;
+   max-width: 45%;
+   padding: 0.19% 0;
+   
+}
+
+.messageButton{
+   
+   padding: 1.4% 0;
+   max-width: 14%;
+   transition: 195ms;
+
+}
+
+.messageButton:hover{
+   
+   background-color: orangered;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.notificationButton{
+   padding: 1.4% 0;
+   max-width: 14%;
+   transition: 195ms;
+}
+.notificationButton:hover{
+   background-color: orangered;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.messageButton img{
+   padding: 0 16%;
+   max-width:100%;
+}
+.notificationButton img{
+   max-width:100%;
+   padding: 0 16%;
+}
+.profileNavigationButton{
+   display: flex;
+   align-items: center;
+   padding: 1.4% 0;
+   min-width: 74%;
+   background-image: url('../img/accInfo/profileImage.png');
+   background-repeat: no-repeat ;
+   background-size: contain;
+   background-position: 2%;
+   transition: 195ms;
+}
+
+.profileNavigationButton:hover{
+   cursor: pointer;
+   background-color: rgb(44, 44, 44);
+   border-radius: 2px;
+}
+
+.profileImg{
+   min-width: 100%;
+   max-width: 100%;
+   font-size: 12px;
+   padding-left: 19%;
+}
+
+.triangleContainer{
+   margin-right: 1%;
+   position: absolute;
+   transform: translate(148.79px,5.45px);
+   width: 0;
+   height: 0;
+}
+
+.triangle{
+   
+   max-width: 100%;
+   max-height: 100%;
+   border-top: 3px solid transparent;
+   border-right: 7px solid white;
+   border-bottom: 3px solid transparent;
+
+}
+.downTriangle{
+   
+   max-width: 100%;
+   max-height: 100%;
+   border-left: 3px solid transparent;
+   border-right: 3px solid transparent;
+   border-top: 7px solid white;
+
+}
+
+.subMenuAccount{
+   max-width: 9%;
+   position: absolute;
+   transform: translate(80%,24%);
+   background-color:rgb(176, 176, 176);
+   border-radius: 4px;
+
+   font-size: 7px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color:gray;
+
+   display: none;
+}
+
+.show {
+   opacity: 0;
+   display: block;
+   animation: show 520ms 1;
+   animation-fill-mode: forwards;
+   animation-delay: 50ms;
+}
+@keyframes show {
+   0%{
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+.yourFollowing{
+   cursor: default;
+   padding: 5% 5%;
+   transition: 125ms;
+}
+.yourFollowing:hover{
+   color:rgb(60, 60, 60);
+   cursor: pointer;
+   background-color:rgb(131, 131, 131); 
+   border-radius: 4px;
+   transform: scale(1.05,1.05);
+}
+
+.yourPodcasts{
+   cursor: default;
+   padding: 5% 5%;
+   transition: 125ms;
+}
+.yourPodcasts:hover{
+   color:rgb(60, 60, 60);
+   cursor: pointer;
+   background-color:rgb(131, 131, 131); 
+   border-radius: 4px;
+   transform: scale(1.05,1.05);
+}
+
+.yourFotos{
+   transition: 125ms;
+   cursor: default;
+   padding: 5% 5%;
+}
+.yourFotos:hover{
+   color:rgb(60, 60, 60);
+   cursor: pointer;
+   background-color:rgb(131, 131, 131); 
+   border-radius: 4px;
+   transform: scale(1.05,1.05);
+}
+
+
+.yourPosts{
+   transition: 125ms;
+   cursor: default;
+   padding: 5% 5%;
+}
+.yourPosts:hover{
+   color:rgb(60, 60, 60);
+   cursor: pointer;
+   background-color:rgb(131, 131, 131); 
+   border-radius: 4px;
+   transform: scale(1.05,1.05);
+}
+
+/*--------------------------*/
+/*------Е---О-----------А-----*/
+/*---Т----Л-------А---Т------*/
+/*--------------С---Й--------*/
+
+.contentContainer{
+   
+   display: flex;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+
+/*------колонка слева------*/
+
+
+.leftBoxContainer{
+   display: flex;
+   flex-direction: column;
+   max-width: 17%;
+}
+
+
+/*------верхний бокс слева------*/
+
+
+.upBox{
+   padding: 5%;
+   background-color:rgb(29, 29, 29) ;
+   border-radius: 4px;
+  
+}
+
+.oneItem{
+   background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 9px;
+   padding: 2% 0 2% 25%;
+   transition: 295ms;
+}
+.oneItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size: 7px;
+   
+}
+.oneItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.twoItem{
+   background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 9px;
+   padding: 2% 0 2% 25%;
+   transition: 295ms;
+}
+.twoItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size: 7px;
+}
+.twoItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.threeItem{
+   background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 9px;
+   padding: 2% 0 2% 25%;
+   transition: 295ms;
+}
+.threeItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size: 7px;
+}
+.threeItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/*-----------Центральный бокс слева----------*/
+
+.centerBox{
+
+   margin: 5% 0;
+   padding: 10% 0;
+   background-color:rgb(29, 29, 29) ;
+   border-radius: 4px;
+   padding: 20% 8%;
+}
+
+.centerBox p{
+   font-weight: bold;
+   cursor: default ; 
+}
+.one{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/first.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   margin-top: 12%;
+   padding: 5% 5% 5% 20%;
+   transition: 200ms;
+}
+.one:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.two{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/second.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 5% 5% 5% 20%;
+   transition: 200ms;
+}
+.two:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.three{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/third.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 5% 5% 5% 20%;
+   transition: 200ms;
+}
+.three:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.four{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/fourth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 5% 5% 5% 20%;
+   transition: 200ms;
+}
+.four:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.five{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/fifth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 5% 5% 5% 20%;
+   transition: 200ms;
+}
+.five:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.six{
+   font-size: 10px;
+   background-image: url(../img/centerBoxleftBox/sixth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 5% 5% 5% 20%;
+   margin-bottom: -12%;
+   transition: 200ms;
+}
+.six:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+/*-------Нижний бокс слева--------------*/
+
+
+
+
+
+
+/*--------Центральные боксы-------------*/
+
+/*--------Окно создания поста-------------*/
+.centerContainer{
+
+   display: flex;
+   flex-direction: column;
+
+   width: 65%;
+   margin: 0 0.71% 0.71% 0.71%;
+   
+   
+   
+}
+
+.createPostContainer{
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+
+   background-color: rgb(29, 29, 29);
+   border-radius: 4px;
+
+   max-width: 100%;
+   height: 20%;
+   min-height: 20%;
+
+}
+.profileImg_createPost{
+   width: 7%;
+   padding: 0 0 0 2%;
+}
+.profileImg_createPost img{
+   max-width: 100%;
+   border-radius: 50%;
+   border: 1px solid black;
+}
+.input-createPost{
+   
+   width: 55%;
+
+}
+.input-createPost input{
+   
+   width: 100%;
+   background-color: rgb(176, 176, 176);
+   border-radius: 4px;
+   transition: 200ms;
+}
+.input-createPost input:focus{
+   
+   box-shadow: 0px 0px 5px rgb(162, 162, 162);
+   border: 1px solid rgb(162, 162, 162);
+   
+}
+.button-createPost{
+
+   
+   width: 15%;
+   
+   padding: 1%;
+   margin: 0 2% 0 0;
+
+   background-color: orangered;
+   border-radius: 4px;
+   
+
+}
+
+.button-createPost button{
+   
+   font-size: 9px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   width: 100%;
+   background-color: orangered;
+   color: white;
+   
+}
+
+.containerPostAll{
+   background-color: rgb(29, 29, 29);
+   padding: 1%;
+   margin: 1% 0;
+   border-radius: 4px;
+
+   display: flex;
+   align-items: center;
+
+}
+
+.ImgPost-container{
+   width: 20%;
+}
+.ImgPost-container img{
+   max-width: 100%;
+}
+
+.contentPost-container{
+   width: 80%;
+   
+}
+.header-contentPost{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+
+}
+.header-contentPost span{
+   display:block;
+}
+
+.buttonsSubHeader-contentPost{
+   
+}
+.boxButtons-subHeader{
+   margin-top: 1%;
+}
+.boxButtons-subHeader button{
+   color: gray;
+   background-color:rgb(67, 67, 67) ;
+   border-radius: 4px;
+   font-size: 11px;
+   font-weight: bold;
+   padding: 1%;
+}
+
+.infoAuthorContainerAll {
+   margin-top: 2%;
+   display: flex;
+   align-items: center;
+}
+.infoAuthorPostContainer {
+   width: 50%;
+}
+.containerInfoAuthor {
+   display: flex;
+}
+.containerInfoAuthor img {
+   max-width: 100%;
+   border-radius: 55%;
+   padding: 0.7%;
+   background-color: white;
+}
+.name-infoAuthor {
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+   padding: 0 0 0 2%;
+}
+.nameAuthor {
+   display: inline-block;
+   font-size: 12px;
+  
+}
+.qanityFollowings {
+   font-size: 8px;
+   color:gray;
+
+}
+.qanityViewsContainer {
+   width: 15%;
+}
+.qanityViewsContainer span{
+   width: 100%;
+   color: gray;
+   font-size: 9px;
+}
+
+.qanityLikesContainer {
+   width: 15%;
+}
+.qanityLikesContainer span {
+   width: 100%;
+   color: gray;
+   font-size: 9px;
+}
+
+.qanityCommentsContainer {
+   width: 15%;
+}
+.qanityCommentsContainer span{
+   width: 100%;
+   color: gray;
+   font-size: 9px;
+}
+
+
+
+
+/*-------Верхний бокс справа--------------*/
+
+
+.rightContainer{
+   width: 20%;
+   
+   margin: 0 0.71% 0.71% 0;
+}
+
+.meetupsContainer{
+
+   display:flex;
+   flex-direction: column;
+
+   width: 100%;
+   height: 90%;
+   background-color:rgb(29, 29, 29);
+   border-radius: 4px;
+
+   padding: 10% 7%;
+}
+.meetupsContainer.hover{
+   cursor: default;
+}
+.meetupsContainer button{
+   color: white;
+   background-color: transparent;
+}
+.eventContainer-meetups{
+   display: flex;
+   
+   width: 100%;
+   height: 30%;
+   margin-top: 2%;
+}
+.dateCalendar-eventContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: rgb(67, 67, 67);
+   width: 24%;
+   min-width: 24%;
+   height: 100%;
+   border-radius: 6px;
+}
+.month-dateCalendar{
+   display: block;
+   font-size: 11px;
+   text-align: center;
+
+   padding: 25.65% 0 0 0;
+}
+.month-dateCalendar:hover{
+   cursor:default;
+}
+.date-dateCalendar{
+   color:rgba(93, 149, 232, 1);
+   display: block;
+   padding: 0 0 50% 0;
+
+   font-weight: bold;
+   font-size: 19px;
+}
+.date-dateCalendar:hover{
+   cursor: default;
+}
+
+.eventBox-eventContainer{
+   display: flex;
+   flex-direction: column;
+
+   margin:0 0 0 2%;
+}
+.eventBox-eventContainer span{
+   font-size: 7px;
+   font-weight: bold;
+}
+.header-eventBox:hover{
+   cursor: default;
+}
+.subHeader-eventBox span{
+   font-size: 6px;
+   color:gray;
+}
+.subHeader-eventBox span:hover{
+   cursor: default;
+}
+
+.buttons-eventBox{
+   display:flex;
+   align-items: flex-end;
+}
+.buttons-eventBox:hover{
+   cursor: default;
+}
+
+.buttons-eventBox button{
+   font-size: 6.98px;
+   font-weight: bold;
+
+   background:rgb(67, 67, 67);
+   border-radius: 4px;
+
+   margin: 0 1%;
+   padding: 0 2%;
+
+}
+
