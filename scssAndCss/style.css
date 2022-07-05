@@ -59,11 +59,21 @@ header{
    width: 10%;
    transition: 195ms;
 }
-
 .homeButton:hover{
    border-radius: 4px;
    background-color: orangered;
    cursor: pointer;
+}
+.homeInfo{
+   position: absolute;
+   top:1.6%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
 }
 
 .calendarButton{
@@ -71,11 +81,21 @@ header{
    width: 10%;
    transition: 195ms;
 }
-
 .calendarButton:hover{
    border-radius: 4px;
    background-color: orangered;
    cursor: pointer;
+}
+.calendarInfo{
+   position: absolute;
+   top:1.6%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
 }
 
 .groupButton{
@@ -89,6 +109,17 @@ header{
    background-color: orangered;
    cursor: pointer;
 }
+.groupInfo{
+   position: absolute;
+   top:1.6%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
 
 .podcastButton{
    
@@ -101,6 +132,17 @@ header{
    background-color: orangered;
    cursor: pointer;
 }
+.podcastInfo{
+   position: absolute;
+   top:1.6%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
 
 .interviewButton{
   
@@ -112,6 +154,17 @@ header{
    border-radius: 4px;
    background-color: orangered;
    cursor: pointer;
+}
+.interviewInfo{
+   position: absolute;
+   top:1.6%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
 }
 
 .menuItem img{
@@ -555,8 +608,8 @@ header{
 
    max-width: 100%;
    height: 15%;
-   min-height: 15%;
-   max-height: 15%;
+   min-height: 10%;
+   max-height: 10%;
 
 }
 .profileImg_createPost{
