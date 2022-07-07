@@ -168,3 +168,61 @@ interviewButtonMenuHeader[0].addEventListener('mouseover',()=>{
 interviewButtonMenuHeader[0].addEventListener('mouseout',()=>{
    setTimeout(()=>interviewButtonMenuHeaderInfo[0].classList.toggle('show'),220);
 })
+
+// ---------------------Адаптив для мобилки---------------------------------------------------------------
+
+
+const mobileWidth = window.screen.width;
+
+const 
+   oneItemBox = document.querySelector('.oneItem'),
+
+   twoItemBox = document.querySelector('.twoItem'),
+
+   threeItemBox = document.querySelector('.threeItem');
+
+const 
+   defaultOneP = "New Newest and Recent<span>Find the latest update</span>",
+   defaultTwoP = "Popular of the day<span>Shots featured today by curators</span>",
+   defaultThreeP = "Following 24<span>Explore from your favorite person</span>";
+
+const likes1 = document.getElementById('like1'),
+      likes2 = document.getElementById('like2'),
+      likes3 = document.getElementById('like3');
+
+const namePostAuthor = document.querySelectorAll('.nameAuthor'),
+      timeCreatePosts = document.querySelectorAll('.qanityFollowings');
+
+const nullBox =document.querySelectorAll('.qanityNoneContainer');
+
+if(mobileWidth <= 375){
+
+            oneItemBox.innerHTML = "Newest";
+            twoItemBox.innerHTML = "Popular";
+            threeItemBox.innerHTML = "Following";
+
+            likes1.style.display = "none";
+            likes2.style.display = "none";
+            likes3.style.display = "none";
+
+         for(let i = 0; i<namePostAuthor.length;i++) {
+            namePostAuthor[i].innerHTML="";
+            namePostAuthor[i].remove();
+         };
+         for(let i = 0; i<timeCreatePosts.length;i++) {
+            timeCreatePosts[i].innerHTML="";
+            timeCreatePosts[i].remove();
+         };
+
+         for(let i = 0; i<nullBox.length;i++) {
+            nullBox[i].remove();
+         };
+
+} else{
+            oneItemBox.innerHTML = defaultOneP;
+            twoItemBox.innerHTML = defaultTwoP;
+            threeItemBox.innerHTML = defaultThreeP;
+}
+
+
+

@@ -1,0 +1,4447 @@
+/* A D A P T I V */
+
+/*-------------------------------------------- Между 1366 и 1024--------------------------------------------------- */
+
+@media screen and (max-width:1150px){
+   body{
+      color:white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   header{
+      padding: 0.51%;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+   
+   .headContainer{
+      padding: 1%;
+      border-radius: 5px;
+      background-color: rgb(29, 29, 29);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   
+   }
+   
+   .mainLogotypeItem{
+      display: flex;
+      align-items: center;
+      background: url('../img/mainLogo.png') no-repeat ;
+      background-size: 22px 22px;
+      background-position: left;
+      font-size: 1.65em;
+      width: 70%;
+      max-height: 100% ;
+   }
+   .mainLogotypeItem .know{
+      font-weight: bold;
+      color: orangered;
+      max-width: 100%;
+      padding: 2% 2%;
+      padding-left: 10%;
+      cursor: default ;
+   }
+   
+   /*------- Меню в башке сайта--------- */
+   
+   .menuItem{
+   
+      display: flex;
+   
+      justify-content: space-between;
+      align-items: center;
+   
+      width: 21vw;
+     
+   }
+   
+   .homeButton{
+      display: flex;
+      align-items: center;
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .homeButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .homeInfo{
+      position: absolute;
+      top:1.6%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .calendarButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .calendarButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .calendarInfo{
+      position: absolute;
+      top:1.6%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .groupButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .groupButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .groupInfo{
+      position: absolute;
+      top:1.6%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .podcastButton{
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .podcastButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .podcastInfo{
+      position: absolute;
+      top:1.6%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .interviewButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .interviewButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .interviewInfo{
+      position: absolute;
+      top:1.6%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .menuItem img{
+      padding: 1vw 1vw; 
+   
+      max-width: 100%;
+   }
+   
+   
+   /*------Окно поиска в башке-------*/
+   
+   
+   .windowSearchContainer{
+   
+      padding: 0 2%;
+      width: 30vw;
+   
+   }
+   .windowSearchContainer input{
+      background-color: rgb(176, 176, 176);
+      background-image: url('../img/searchWindow/Group 4.png');
+      background-position: 90%;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      width: 30vw;
+      padding: 0 2%;
+   }
+   
+   
+   /*--------Информация о текущем аккаунте--------*/
+   
+   
+   .accountContainer{
+      
+      display: flex;
+      
+      min-width: 19vw;
+      max-width: 45vw;
+      padding: 0.19% 0;
+      
+   }
+   
+   .messageButton{
+      
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   
+   }
+   
+   .messageButton:hover{
+      
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .notificationButton{
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   }
+   .notificationButton:hover{
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .messageButton img{
+      padding: 0 16%;
+      max-width:100%;
+   }
+   .notificationButton img{
+      max-width:100%;
+      padding: 0 16%;
+   }
+   .profileNavigationButton{
+      display: flex;
+      align-items: center;
+      padding: 1.4% 0 1.4% 2.5%;
+      
+      width: 12vw;
+      background-image: url('../img/accInfo/profileImage.png');
+      background-repeat: no-repeat ;
+      background-size: contain;
+      background-position: 1.5%;
+      transition: 195ms;
+   }
+   
+   .profileNavigationButton:hover{
+      cursor: pointer;
+      background-color: rgb(44, 44, 44);
+      border-radius: 2px;
+   }
+   
+   .profileImg{
+      min-width: 50%;
+      max-width: 100%;
+      font-size: 0.8em;
+      padding-left: 19%;
+   }
+   
+   .triangleContainer{
+      /* margin-right: 1%; */
+      position: absolute;
+      transform: translate(15.67vw,0.69vw);
+      width: 0;
+      height: 0;
+   }
+   
+   .triangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-top: 3px solid transparent;
+      border-right: 7px solid white;
+      border-bottom: 3px solid transparent;
+   
+   }
+   .downTriangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 7px solid white;
+   
+   }
+   
+   .subMenuAccount{
+      width: 10%;
+      position: absolute;
+      transform: translate(7.28vw,2.2vw);
+      background-color:rgb(176, 176, 176);
+      border-radius: 4px;
+   
+      font-size: 0.8em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color:gray;
+   
+      display: none;
+   }
+   
+   .show {
+      opacity: 0;
+      display: block;
+      animation: show 520ms 1;
+      animation-fill-mode: forwards;
+      animation-delay: 50ms;
+   }
+   @keyframes show {
+      0%{
+         opacity: 0;
+      }
+   
+      100% {
+         opacity: 1;
+      }
+   }
+   
+   .yourFollowing{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourFollowing:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourPodcasts{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourPodcasts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourFotos{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourFotos:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   
+   .yourPosts{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourPosts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   /*--------------------------*/
+   /*------Е---О-----------А-----*/
+   /*---Т----Л-------А---Т------*/
+   /*--------------С---Й--------*/
+   
+   .contentContainer{
+      
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
+   }
+   
+   
+   /*------колонка слева------*/
+   
+   
+   .leftBoxContainer{
+      display: flex;
+      flex-direction: column;
+      width: 15vw;
+      
+   }
+   
+   
+   /*------верхний бокс слева------*/
+   
+   
+   .upBox{
+      padding: 10% 7%;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      min-height: 12vw;
+     
+   }
+   
+   .oneItem{
+      background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .oneItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.8em;
+      
+   }
+   .oneItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .twoItem{
+      background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .twoItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size: 0.8em;
+   }
+   .twoItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .threeItem{
+      background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .threeItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size: 0.8em;
+   }
+   .threeItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   /*-----------Центральный бокс слева----------*/
+   
+   .centerBox{
+   
+      margin: 5% 0;
+      padding: 10% 0;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      padding: 20% 8%;
+   }
+   
+   .centerBox p{
+      /* //font-weight: bold; */
+      cursor: default ; 
+   }
+   .one{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/first.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      margin-top: 12%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .one:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .two{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/second.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .two:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .three{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/third.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .three:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .four{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/fourth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .four:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .five{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/fifth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .five:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .six{
+      font-size: 1.6em;
+      background-image: url(../img/centerBoxleftBox/sixth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      margin-bottom: -12%;
+      transition: 200ms;
+   }
+   .six:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   /*-------Нижний бокс слева--------------*/
+   
+   
+   
+   
+   
+   
+   /*--------Центральные боксы-------------*/
+   .contentContainer{
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+   }
+   /*--------Окно создания поста-------------*/
+   .centerContainer{
+   
+      display: flex;
+      flex-direction: column;
+   
+      width: 57vw;
+      margin: 0 0.71% 0.71% 0.71%;
+      
+   }
+   
+   .createPostContainer{
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+   
+      background-color: rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      max-width: 100%;
+      height: 15%;
+      min-height: 10%;
+      max-height: 10%;
+   
+   }
+   .profileImg_createPost{
+      width: 7%;
+      padding: 0 0 0 2%;
+   }
+   .profileImg_createPost img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+   }
+   .input-createPost{
+      
+      width: 55%;
+      height: 50%;
+      /* border: 1px solid white; */
+   
+   }
+   .input-createPost input{
+      
+      width: 100%;
+      height: 100%;
+      background-color: rgb(176, 176, 176);
+      border-radius: 4px;
+      transition: 200ms;
+   }
+   .input-createPost input:focus{
+      
+      box-shadow: 0px 0px 5px rgb(162, 162, 162);
+      border: 1px solid rgb(162, 162, 162);
+      
+   }
+   .button-createPost{
+   
+      
+      width: 15%;
+      
+      padding: 1%;
+      margin: 0 2% 0 0;
+   
+      background-color: orangered;
+      border-radius: 4px;
+      
+   
+   }
+   
+   .button-createPost button{
+      
+      font-size: 9px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      background-color: orangered;
+      color: white;
+      
+   }
+   
+   
+   /* --------------Блоки постов-------------- */
+   
+   
+   .containerPostAll{
+      background-color: rgb(29, 29, 29);
+      padding: 1%;
+      margin: 1% 0;
+      border-radius: 4px;
+   
+      display: flex;
+      align-items: center;
+   
+   }
+   
+   .ImgPost-container{
+      width: 20%;
+   }
+   .ImgPost-container img{
+      max-width: 100%;
+   }
+   
+   .contentPost-container{
+      width: 80%;
+      
+   }
+   .header-contentPost{
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   
+      font-size: 1.2em;
+   
+   }
+   .header-contentPost span{
+      display:block;
+   }
+   
+   .buttonsSubHeader-contentPost{
+      
+   }
+   .boxButtons-subHeader{
+      margin-top: 1%;
+   }
+   .boxButtons-subHeader button{
+      color: gray;
+      background-color:rgb(67, 67, 67) ;
+      border-radius: 4px;
+      font-size: 0.67em;
+      font-weight: bold;
+      padding: 1% 2%;
+   }
+   
+   .infoAuthorContainerAll {
+      margin-top: 2%;
+      display: flex;
+      align-items: center;
+   }
+   .infoAuthorPostContainer {
+      width: 50%;
+   }
+   .containerInfoAuthor {
+      display: flex;
+   }
+   .containerInfoAuthor img {
+      max-width: 100%;
+      border-radius: 55%;
+      padding: 0.7%;
+      background-color: white;
+   }
+   .name-infoAuthor {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   
+      padding: 0 0 0 2%;
+   }
+   .nameAuthor {
+      display: inline-block;
+      font-size: 14px;
+     
+   }
+   .qanityFollowings {
+      font-size: 10px;
+      color:gray;
+   
+   }
+   .qanityViewsContainer {
+      margin-right: 1vw;
+      width: 15%;
+   }
+   .qanityViewsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.7em;
+   }
+   
+   .qanityLikesContainer {
+      width: 15%;
+      margin-right: 1vw;
+   }
+   .qanityLikesContainer span {
+      width: 100%;
+      color: gray;
+      font-size: 0.7em;
+   }
+   
+   .qanityCommentsContainer {
+      width: 15%;
+   }
+   .qanityCommentsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.7em;
+   }
+   
+   
+   
+   
+   /*-------Верхний бокс справа--------------*/
+   
+   
+   .rightContainer{
+      width: 17vw;
+      
+      margin: 0 0.71% 0.71% 0;
+   }
+   
+   .meetupsContainer{
+   
+      display:flex;
+      flex-direction: column;
+   
+      width: 100%;
+      height: 31.2vw;
+      background-color:rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      padding: 10% 7%;
+   }
+   .meetupsContainer.hover{
+      cursor: default;
+   }
+   .meetupsContainer button{
+      font-size: 1.6em;
+      color: white;
+      background-color: transparent;
+   }
+   .eventContainer-meetups{
+      display: flex;
+      
+      width: 100%;
+      height: 7vw;
+      margin-top: 5%;
+   }
+   .dateCalendar-eventContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   
+      background-color: rgb(67, 67, 67);
+      width: 24%;
+      min-width: 24%;
+      height: 100%;
+      border-radius: 6px;
+   }
+   .month-dateCalendar{
+      display: block;
+      font-size: 1em;
+      text-align: center;
+   
+      padding: 25.65% 0 0 0;
+   }
+   .month-dateCalendar:hover{
+      cursor:default;
+   }
+   .date-dateCalendar{
+      color:rgba(93, 149, 232, 1);
+      display: block;
+      padding: 0 0 50% 0;
+   
+      font-weight: bold;
+      font-size: 1.8em;
+   }
+   .date-dateCalendar:hover{
+      cursor: default;
+   }
+   
+   .eventBox-eventContainer{
+      display: flex;
+      flex-direction: column;
+   
+      margin:0 0 0 6%;
+   }
+   .eventBox-eventContainer span{
+      font-size: 0.7em;
+      font-weight: bold;
+   }
+   .header-eventBox:hover{
+      cursor: default;
+   }
+   .subHeader-eventBox span{
+      font-size: 0.66em;
+      color:gray;
+   }
+   .subHeader-eventBox span:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox{
+      display:flex;
+      align-items: center;
+   }
+   .buttons-eventBox:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox button{
+      font-size: 0.56em;
+      font-weight: bold;
+   
+      background:rgb(67, 67, 67);
+      border-radius: 4px;
+   
+      margin: 1% 3%;
+      padding: 1% 2%;
+   
+   }
+
+
+   }
+
+
+/*----------------------------------- Маленькие мониторы шириной 1024px ---------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+  body{
+   font-family: Arial, Helvetica, sans-serif;
+  }
+   /* ----------------------------------- */
+   /* ------------Башка------------------ */
+   /* ----------------------------------- */
+
+   .mainLogotypeItem{
+      display: flex;
+      align-items: center;
+      background: url('../img/mainLogo.png') no-repeat ;
+      background-size: 27px 25px;
+      background-position: left;
+      font-size: 1.2em;
+      width: 70%;
+      max-height: 100% ;
+   }
+
+
+   /*------- Меню в башке сайта--------- */
+
+.menuItem{
+
+   display: flex;
+
+   justify-content: space-between;
+   align-items: center;
+
+   width: 20vw;
+  
+}
+
+.homeButton{
+   display: flex;
+   align-items: center;
+   
+   width: 3.2vw;
+   transition: 195ms;
+}
+.homeButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+
+   cursor: pointer;
+}
+.homeInfo{
+   position: absolute;
+   top:1.259%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
+
+.calendarButton{
+  
+   width: 3.2vw;
+   transition: 195ms;
+}
+.calendarButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+.calendarInfo{
+   position: absolute;
+   top:1.259%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
+
+.groupButton{
+  
+   width: 3.2vw;
+   transition: 195ms;
+}
+
+.groupButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+.groupInfo{
+   position: absolute;
+   top:1.259%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
+
+.podcastButton{
+   
+   width: 3.2vw;
+   transition: 195ms;
+}
+
+.podcastButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+.podcastInfo{
+   position: absolute;
+   top:1.259%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
+
+.interviewButton{
+  
+   width: 3.2vw;
+   transition: 195ms;
+}
+
+.interviewButton:hover{
+   border-radius: 4px;
+   background-color: orangered;
+   cursor: pointer;
+}
+.interviewInfo{
+   position: absolute;
+   top:1.259%;
+
+   font-size: 10px;
+   font-weight: bold;
+   color:gray;
+
+   display:none;
+   
+}
+
+.menuItem img{
+   padding: 1vw 1vw; 
+
+   max-width: 100%;
+}
+
+
+
+/* ------Информация об аккаунте с выпадающим меню------------ */
+
+
+.accountContainer{
+   
+   display: flex;
+   
+   min-width: 19vw;
+   max-width: 45vw;
+   padding: 0.19% 0;
+   
+}
+
+.messageButton{
+   
+   padding: 2.4% 0;
+   width: 2.3vw;
+   transition: 195ms;
+
+}
+
+.messageButton:hover{
+   
+   background-color: orangered;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.notificationButton{
+   padding: 2.4% 0;
+   width: 2.3vw;
+   transition: 195ms;
+}
+.notificationButton:hover{
+   background-color: orangered;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.messageButton img{
+   padding: 0 16%;
+   max-width:100%;
+}
+.notificationButton img{
+   max-width:100%;
+   padding: 0 16%;
+}
+.profileNavigationButton{
+   display: flex;
+   align-items: center;
+   padding: 0.4% 0 0.4% 7.5%;
+   width: 13vw;
+   background-image: url('../img/accInfo/profileImage.png');
+   background-repeat: no-repeat ;
+   background-size: contain;
+   background-position: 1.5%;
+   transition: 195ms;
+}
+
+.profileNavigationButton:hover{
+   cursor: pointer;
+   background-color: rgb(44, 44, 44);
+   border-radius: 2px;
+}
+
+.profileImg{
+   min-width: 50%;
+   max-width: 100%;
+   font-size: 1.2vw;
+   padding-left: 19%;
+}
+
+.triangleContainer{
+   /* margin-right: 1%; */
+   position: absolute;
+   transform: translate(17.8vw,0.88vw);
+   width: 0;
+   height: 0;
+}
+
+.triangle{
+   
+   max-width: 100%;
+   max-height: 100%;
+   border-top: 3px solid transparent;
+   border-right: 7px solid white;
+   border-bottom: 3px solid transparent;
+
+}
+.downTriangle{
+   
+   max-width: 100%;
+   max-height: 100%;
+   border-left: 3px solid transparent;
+   border-right: 3px solid transparent;
+   border-top: 7px solid white;
+
+}
+.subMenuAccount{
+   width: 10.45%;
+   position: absolute;
+   transform: translate(6.67vw,2.6vw);
+   background-color:rgb(176, 176, 176);
+   border-radius: 4px;
+
+   font-size: 0.5em;
+   font-weight: bold;
+   text-transform: uppercase;
+   color:gray;
+
+   display: none;
+}
+
+
+/*--------------------------*/
+/*------Е---О-----------А-----*/
+/*---Т----Л-------А---Т------*/
+/*--------------С---Й--------*/
+
+.contentContainer{
+   
+   display: flex;
+   max-width: 780px;
+   margin: 0 auto;
+}
+
+/*------колонка слева------*/
+
+
+.leftBoxContainer{
+   display: flex;
+   flex-direction: column;
+   width: 15vw;
+   
+}
+
+
+/*------верхний бокс слева------*/
+
+
+.upBox{
+   padding: 10% 7%;
+   background-color:rgb(29, 29, 29) ;
+   border-radius: 4px;
+   min-height: 12vw;
+  
+}
+
+.oneItem{
+   background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 0.8em;
+   padding: 4% 0 4% 25%;
+   margin: 5px 0;
+   transition: 295ms;
+}
+.oneItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size:  0.67em;
+   letter-spacing: 0.125em;
+   
+}
+.oneItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.twoItem{
+   background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 0.8em;
+   padding: 2% 0 2% 25%;
+   margin: 5px 0;
+   transition: 295ms;
+}
+.twoItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size: 0.67em;
+   letter-spacing: 0.125em;
+}
+.twoItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.threeItem{
+   background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+   background-repeat: no-repeat;
+   background-size: 20%;
+   background-position: 3.3%;
+   font-size: 0.8em;
+   padding: 2% 0 2% 25%;
+   margin: 5px 0;
+   transition: 295ms;
+}
+.threeItem span{
+   color: rgb(180, 177, 177);
+   display: block;
+   font-size:  0.67em;
+   letter-spacing: 0.125em;
+}
+.threeItem:hover{
+   background-color: rgb(79, 79, 79);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/*-----------Центральный бокс слева----------*/
+
+.centerBox{
+
+   margin: 7% 0;
+   padding: 10% 0;
+   background-color:rgb(29, 29, 29) ;
+   border-radius: 4px;
+   padding: 20% 8%;
+}
+
+.centerBox p{
+   /* //font-weight: bold; */
+   cursor: default ; 
+}
+.one{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   
+   background-image: url(../img/centerBoxleftBox/first.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   margin-top: 12%;
+   padding: 10% 5% 10% 30%;
+   transition: 200ms;
+}
+.one:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.two{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   background-image: url(../img/centerBoxleftBox/second.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 10% 5% 10% 30%;
+   transition: 200ms;
+}
+.two:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.three{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   background-image: url(../img/centerBoxleftBox/third.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 10% 5% 10% 30%;
+   transition: 200ms;
+}
+.three:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.four{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   background-image: url(../img/centerBoxleftBox/fourth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 10% 5% 10% 30%;
+   transition: 200ms;
+}
+.four:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.five{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   background-image: url(../img/centerBoxleftBox/fifth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 10% 5% 10% 30%;
+   transition: 200ms;
+}
+.five:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+.six{
+   font-size: 0.95em;
+   letter-spacing: -0.021em;
+   background-image: url(../img/centerBoxleftBox/sixth.png);
+   background-repeat: no-repeat;
+   background-size: 15%;
+   background-position: 2%;
+   padding: 10% 5% 10% 30%;
+   margin-bottom: -12%;
+   transition: 200ms;
+}
+.six:hover{
+   cursor: pointer;
+   background-color:rgb(79, 79, 79); 
+   border-radius: 4px;
+}
+/*-------Нижний бокс слева--------------*/
+
+
+
+
+
+
+/*--------Центральные боксы-------------*/
+
+
+.contentContainer{
+   display: flex;
+   max-width: 850px;
+   margin: 0 auto;
+}
+
+
+/*--------Окно создания поста-------------*/
+.centerContainer{
+
+   display: flex;
+   flex-direction: column;
+
+   width: 57vw;
+   margin: 0 0.71% 0.71% 0.71%;
+   
+}
+
+.createPostContainer{
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+
+   background-color: rgb(29, 29, 29);
+   border-radius: 4px;
+
+   max-width: 100%;
+   height: 15%;
+   min-height: 10%;
+   max-height: 10%;
+
+}
+.profileImg_createPost{
+   width: 7%;
+   padding: 0 0 0 2%;
+}
+.profileImg_createPost img{
+   max-width: 100%;
+   border-radius: 50%;
+   border: 1px solid black;
+}
+.input-createPost{
+   
+   width: 55%;
+   height: 50%;
+   /* border: 1px solid white; */
+
+}
+.input-createPost input{
+   
+   width: 100%;
+   height: 100%;
+   background-color: rgb(176, 176, 176);
+   border-radius: 4px;
+   transition: 200ms;
+}
+.input-createPost input:focus{
+   
+   box-shadow: 0px 0px 5px rgb(162, 162, 162);
+   border: 1px solid rgb(162, 162, 162);
+   
+}
+.button-createPost{
+
+   
+   width: 15%;
+   
+   padding: 1%;
+   margin: 0 2% 0 0;
+
+   background-color: orangered;
+   border-radius: 4px;
+   
+
+}
+
+.button-createPost button{
+   
+   font-size: 9px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   width: 100%;
+   background-color: orangered;
+   color: white;
+   
+}
+
+
+/* --------------Блоки постов-------------- */
+
+
+.containerPostAll{
+   background-color: rgb(29, 29, 29);
+   padding: 1%;
+   margin: 1.5% 0;
+   border-radius: 4px;
+
+   display: flex;
+   align-items: center;
+
+}
+
+.ImgPost-container{
+   width: 20%;
+}
+.ImgPost-container img{
+   max-width: 100%;
+}
+
+.contentPost-container{
+   width: 80%;
+   
+}
+.header-contentPost{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+
+   font-size: 0.959em;
+   font-weight: 600;
+
+}
+.header-contentPost span{
+   display:block;
+}
+
+.buttonsSubHeader-contentPost{
+   
+}
+.boxButtons-subHeader{
+   margin-top: 1%;
+}
+.boxButtons-subHeader button{
+   color: gray;
+   background-color:rgb(67, 67, 67) ;
+   border-radius: 4px;
+   font-size: 0.5em;
+   font-weight: bold;
+   padding: 1% 2%;
+}
+
+.infoAuthorContainerAll {
+   margin-top: 2%;
+   display: flex;
+   align-items: center;
+}
+.infoAuthorPostContainer {
+   width: 50%;
+}
+.containerInfoAuthor {
+   display: flex;
+}
+.containerInfoAuthor img {
+   max-width: 100%;
+   border-radius: 55%;
+   padding: 0.7%;
+   background-color: white;
+}
+.name-infoAuthor {
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+   padding: 0 0 0 2%;
+}
+.nameAuthor {
+   display: inline-block;
+   font-size: 0.8em;
+  
+}
+.qanityFollowings {
+   font-size: 0.7em;
+   color:gray;
+
+}
+.qanityViewsContainer {
+   width: 15%;
+}
+.qanityViewsContainer span{
+   width: 100%;
+   color: gray;
+   font-size: 0.7em;
+}
+
+.qanityLikesContainer {
+   width: 15%;
+}
+.qanityLikesContainer span {
+   width: 100%;
+   color: gray;
+   font-size: 0.7em;
+}
+
+.qanityCommentsContainer {
+   width: 15%;
+}
+.qanityCommentsContainer span{
+   width: 100%;
+   color: gray;
+   font-size: 0.7em;
+}
+
+
+
+
+/*-------Верхний бокс справа--------------*/
+
+
+.rightContainer{
+   width: 18vw;
+   
+   margin: 0 0.71% 0.71% 0;
+}
+
+.meetupsContainer{
+
+   display:flex;
+   flex-direction: column;
+
+   width: 100%;
+   height: 31.2vw;
+   background-color:rgb(29, 29, 29);
+   border-radius: 4px;
+
+   padding: 12% 7%;
+}
+.meetupsContainer.hover{
+   cursor: default;
+}
+.meetupsContainer button{
+   font-size: 0.999em;
+   color: white;
+   background-color: transparent;
+}
+.eventContainer-meetups{
+   display: flex;
+   
+   width: 100%;
+   height: 7vw;
+   margin-top: 7%;
+}
+.dateCalendar-eventContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: rgb(67, 67, 67);
+   width: 24%;
+   min-width: 24%;
+   height: 100%;
+   border-radius: 6px;
+}
+.month-dateCalendar{
+   display: block;
+   font-size: 1.2em;
+   text-align: center;
+
+   padding: 25.65% 0 0 0;
+}
+.month-dateCalendar:hover{
+   cursor:default;
+}
+.date-dateCalendar{
+   color:rgba(93, 149, 232, 1);
+   display: block;
+   padding: 0 0 50% 0;
+
+   font-weight: bold;
+   font-size: 1.8em;
+}
+.date-dateCalendar:hover{
+   cursor: default;
+}
+
+.eventBox-eventContainer{
+   display: flex;
+   flex-direction: column;
+
+   margin:0 0 0 5%;
+}
+.eventBox-eventContainer span{
+   font-size: 0.678em;
+   font-weight: bold;
+}
+.header-eventBox:hover{
+   cursor: default;
+}
+.subHeader-eventBox span{
+   font-size: 0.580em;
+   color:gray;
+}
+.subHeader-eventBox span:hover{
+   cursor: default;
+}
+
+.buttons-eventBox{
+   display:flex;
+   align-items: center;
+}
+.buttons-eventBox:hover{
+   cursor: default;
+}
+
+.buttons-eventBox button{
+   font-size: 0.5em;
+   font-weight: bold;
+
+   background:rgb(67, 67, 67);
+   border-radius: 4px;
+
+   margin: 1% 3%;
+   padding: 1% 2.5%;
+
+}
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- Между 1024 и 800-------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width:920px){
+   body{
+      color:white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   header{
+      padding: 0.51%;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+   
+   .headContainer{
+      padding: 1%;
+      border-radius: 5px;
+      background-color: rgb(29, 29, 29);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   
+   }
+   
+   .mainLogotypeItem{
+      display: flex;
+      align-items: center;
+      background: url('../img/mainLogo.png') no-repeat ;
+      background-size: 22px 22px;
+      background-position: left;
+      font-size: 1em;
+      width: 70%;
+      max-height: 100% ;
+   }
+   .mainLogotypeItem .know{
+      font-weight: bold;
+      color: orangered;
+      max-width: 100%;
+      padding: 2% 2%;
+      padding-left: 10%;
+      cursor: default ;
+   }
+   
+   /*------- Меню в башке сайта--------- */
+   
+   .menuItem{
+   
+      display: flex;
+   
+      justify-content: space-between;
+      align-items: center;
+   
+      width: 21vw;
+     
+   }
+   
+   .homeButton{
+      display: flex;
+      align-items: center;
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .homeButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .homeInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .calendarButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .calendarButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .calendarInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .groupButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .groupButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .groupInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .podcastButton{
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .podcastButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .podcastInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .interviewButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .interviewButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .interviewInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .menuItem img{
+      padding: 1vw 1vw; 
+   
+      max-width: 100%;
+   }
+   
+   
+   /*------Окно поиска в башке-------*/
+   
+   
+   .windowSearchContainer{
+   
+      padding: 0 2%;
+      width: 30vw;
+   
+   }
+   .windowSearchContainer input{
+      background-color: rgb(176, 176, 176);
+      background-image: url('../img/searchWindow/Group 4.png');
+      background-position: 90%;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      width: 30vw;
+      padding: 0 2%;
+   }
+   
+   
+   /*--------Информация о текущем аккаунте--------*/
+   
+   
+   .accountContainer{
+      
+      display: flex;
+      
+      min-width: 19vw;
+      max-width: 45vw;
+      padding: 0.19% 0;
+      
+   }
+   
+   .messageButton{
+      
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   
+   }
+   
+   .messageButton:hover{
+      
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .notificationButton{
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   }
+   .notificationButton:hover{
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .messageButton img{
+      padding: 0 16%;
+      max-width:100%;
+   }
+   .notificationButton img{
+      max-width:100%;
+      padding: 0 16%;
+   }
+   .profileNavigationButton{
+      display: flex;
+      align-items: center;
+      padding: 1.4% 0 1.4% 2.5%;
+      
+      width: 13vw;
+      background-image: url('../img/accInfo/profileImage.png');
+      background-repeat: no-repeat ;
+      background-size: contain;
+      background-position: 1.5%;
+      transition: 195ms;
+   }
+   
+   .profileNavigationButton:hover{
+      cursor: pointer;
+      background-color: rgb(44, 44, 44);
+      border-radius: 2px;
+   }
+   
+   .profileImg{
+      min-width: 50%;
+      max-width: 100%;
+      font-size: 0.66em;
+      padding-left: 19%;
+   }
+   
+   .triangleContainer{
+      /* margin-right: 1%; */
+      position: absolute;
+      transform: translate(15.99vw,0.69vw);
+      width: 0;
+      height: 0;
+   }
+   
+   .triangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-top: 3px solid transparent;
+      border-right: 7px solid white;
+      border-bottom: 3px solid transparent;
+   
+   }
+   .downTriangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 7px solid white;
+   
+   }
+   
+   .subMenuAccount{
+      width: 10.55%;
+      position: absolute;
+      transform: translate(7.28vw,2.2vw);
+      background-color:rgb(176, 176, 176);
+      border-radius: 4px;
+   
+      font-size: 0.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color:gray;
+   
+      display: none;
+   }
+   
+   .show {
+      opacity: 0;
+      display: block;
+      animation: show 520ms 1;
+      animation-fill-mode: forwards;
+      animation-delay: 50ms;
+   }
+   @keyframes show {
+      0%{
+         opacity: 0;
+      }
+   
+      100% {
+         opacity: 1;
+      }
+   }
+   
+   .yourFollowing{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourFollowing:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourPodcasts{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourPodcasts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourFotos{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourFotos:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   
+   .yourPosts{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourPosts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   /*--------------------------*/
+   /*------Е---О-----------А-----*/
+   /*---Т----Л-------А---Т------*/
+   /*--------------С---Й--------*/
+   
+   .contentContainer{
+      
+      display: flex;
+      max-width: 700px;
+      margin: 0 auto;
+   }
+   
+   
+   /*------колонка слева------*/
+   
+   
+   .leftBoxContainer{
+      display: flex;
+      flex-direction: column;
+      width: 15vw;
+      
+   }
+   
+   
+   /*------верхний бокс слева------*/
+   
+   
+   .upBox{
+      padding: 10% 7%;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      min-height: 12vw;
+     
+   }
+   
+   .oneItem{
+      background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.9em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .oneItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+      
+   }
+   .oneItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .twoItem{
+      background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.9em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .twoItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+   }
+   .twoItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .threeItem{
+      background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.9em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .threeItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+   }
+   .threeItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   /*-----------Центральный бокс слева----------*/
+   
+   .centerBox{
+   
+      margin: 5% 0;
+      padding: 10% 0;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      padding: 20% 8%;
+   }
+   
+   .centerBox p{
+      /* //font-weight: bold; */
+      cursor: default ; 
+   }
+   .one{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/first.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      margin-top: 12%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .one:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .two{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/second.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .two:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .three{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/third.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .three:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .four{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/fourth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .four:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .five{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/fifth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .five:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .six{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/sixth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      margin-bottom: -12%;
+      transition: 200ms;
+   }
+   .six:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   /*-------Нижний бокс слева--------------*/
+   
+   
+   
+   
+   
+   
+   /*--------Центральные боксы-------------*/
+
+   .contentContainer{
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
+
+   }
+   /*--------Окно создания поста-------------*/
+   .centerContainer{
+   
+      display: flex;
+      flex-direction: column;
+   
+      width: 57vw;
+      margin: 0 0.71% 0.71% 0.71%;
+      
+   }
+   
+   .createPostContainer{
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+   
+      background-color: rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      max-width: 100%;
+      height: 2vw;
+      min-height: 10%;
+      max-height: 10%;
+   
+   }
+   .profileImg_createPost{
+      width: 7%;
+      padding: 0 0 0 2%;
+   }
+   .profileImg_createPost img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+   }
+   .input-createPost{
+      
+      width: 55%;
+      height: 2vw;
+      /* border: 1px solid white; */
+   
+   }
+   .input-createPost input{
+      
+      width: 100%;
+      height: 100%;
+      background-color: rgb(176, 176, 176);
+      border-radius: 4px;
+      transition: 200ms;
+   }
+   .input-createPost input:focus{
+      
+      box-shadow: 0px 0px 5px rgb(162, 162, 162);
+      border: 1px solid rgb(162, 162, 162);
+      
+   }
+   .button-createPost{
+   
+      
+      width: 15%;
+      
+      padding: 1%;
+      margin: 0 2% 0 0;
+   
+      background-color: orangered;
+      border-radius: 4px;
+      
+   
+   }
+   
+   .button-createPost button{
+      
+      font-size: 9px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      background-color: orangered;
+      color: white;
+      
+   }
+   
+   
+   /* --------------Блоки постов-------------- */
+   
+   
+   .containerPostAll{
+      background-color: rgb(29, 29, 29);
+      padding: 2%;
+      margin: 1% 0;
+      border-radius: 4px;
+   
+      display: flex;
+      align-items: center;
+   
+   }
+   
+   .ImgPost-container{
+      width: 20%;
+   }
+   .ImgPost-container img{
+      max-width: 100%;
+   }
+   
+   .contentPost-container{
+      width: 80%;
+      
+   }
+   .header-contentPost{
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   
+      font-size: 1.1em;
+   
+   }
+   .header-contentPost span{
+      display:block;
+   }
+   
+   .buttonsSubHeader-contentPost{
+      
+   }
+   .boxButtons-subHeader{
+      margin-top: 1%;
+   }
+   .boxButtons-subHeader button{
+      color: gray;
+      background-color:rgb(67, 67, 67) ;
+      border-radius: 4px;
+      font-size: 0.47em;
+      font-weight: bold;
+      padding: 1% 2%;
+   }
+   
+   .infoAuthorContainerAll {
+      margin-top: 2%;
+      display: flex;
+      align-items: center;
+   }
+   .infoAuthorPostContainer {
+      width: 50%;
+   }
+   .containerInfoAuthor {
+      display: flex;
+   }
+   .containerInfoAuthor img {
+      max-width: 100%;
+      border-radius: 55%;
+      padding: 0.7%;
+      background-color: white;
+   }
+   .name-infoAuthor {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   
+      padding: 0 0 0 2%;
+   }
+   .nameAuthor {
+      display: inline-block;
+      font-size: 14px;
+     
+   }
+   .qanityFollowings {
+      font-size: 10px;
+      color:gray;
+   
+   }
+   .qanityViewsContainer {
+      margin-right: 1vw;
+      width: 15%;
+   }
+   .qanityViewsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   .qanityLikesContainer {
+      width: 15%;
+      margin-right: 1vw;
+   }
+   .qanityLikesContainer span {
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   .qanityCommentsContainer {
+      width: 15%;
+   }
+   .qanityCommentsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   
+   
+   
+   /*-------Верхний бокс справа--------------*/
+   
+   
+   .rightContainer{
+      width: 17vw;
+      
+      margin: 0 0.71% 0.71% 0;
+   }
+   
+   .meetupsContainer{
+   
+      display:flex;
+      flex-direction: column;
+   
+      width: 100%;
+      height: 31.2vw;
+      background-color:rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      padding: 10% 7%;
+   }
+   .meetupsContainer.hover{
+      cursor: default;
+   }
+   .meetupsContainer button{
+      font-size: 1.2em;
+      color: white;
+      background-color: transparent;
+   }
+   .eventContainer-meetups{
+      display: flex;
+      
+      width: 100%;
+      height: 7vw;
+      margin-top: 5%;
+   }
+   .dateCalendar-eventContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   
+      background-color: rgb(67, 67, 67);
+      width: 24%;
+      min-width: 24%;
+      height: 100%;
+      border-radius: 6px;
+   }
+   .month-dateCalendar{
+      display: block;
+      font-size: 1em;
+      text-align: center;
+   
+      padding: 25.65% 0 0 0;
+   }
+   .month-dateCalendar:hover{
+      cursor:default;
+   }
+   .date-dateCalendar{
+      color:rgba(93, 149, 232, 1);
+      display: block;
+      padding: 0 0 50% 0;
+   
+      font-weight: bold;
+      font-size: 1.8em;
+   }
+   .date-dateCalendar:hover{
+      cursor: default;
+   }
+   
+   .eventBox-eventContainer{
+      display: flex;
+      flex-direction: column;
+   
+      margin:0 0 0 6%;
+   }
+   .eventBox-eventContainer span{
+      font-size: 0.6em;
+      font-weight: bold;
+   }
+   .header-eventBox:hover{
+      cursor: default;
+   }
+   .subHeader-eventBox span{
+      font-size: 0.55em;
+      color:gray;
+   }
+   .subHeader-eventBox span:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox{
+      display:flex;
+      align-items: center;
+   }
+   .buttons-eventBox:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox button{
+      font-size: 0.45em;
+      font-weight: bold;
+   
+      background:rgb(67, 67, 67);
+      border-radius: 4px;
+   
+      margin: 1% 3%;
+      padding: 1% 2%;
+   
+   }
+   }
+
+.show {
+   opacity: 0;
+   display: block;
+   animation: show 520ms 1;
+   animation-fill-mode: forwards;
+   animation-delay: 50ms;
+}
+@keyframes show {
+   0%{
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- 800--------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width:920px){
+   body{
+      color:white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   header{
+      padding: 0.51%;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+   
+   .headContainer{
+      padding: 1%;
+      border-radius: 5px;
+      background-color: rgb(29, 29, 29);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   
+   }
+   
+   .mainLogotypeItem{
+      display: flex;
+      align-items: center;
+      background: url('../img/mainLogo.png') no-repeat ;
+      background-size: 22px 22px;
+      background-position: left;
+      font-size: 1em;
+      width: 70%;
+      max-height: 100% ;
+   }
+   .mainLogotypeItem .know{
+      font-weight: bold;
+      color: orangered;
+      max-width: 100%;
+      padding: 2% 2%;
+      padding-left: 10%;
+      cursor: default ;
+   }
+   
+   /*------- Меню в башке сайта--------- */
+   
+   .menuItem{
+   
+      display: flex;
+   
+      justify-content: space-between;
+      align-items: center;
+   
+      width: 21vw;
+     
+   }
+   
+   .homeButton{
+      display: flex;
+      align-items: center;
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .homeButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .homeInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .calendarButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   .calendarButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .calendarInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .groupButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .groupButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .groupInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .podcastButton{
+      
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .podcastButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .podcastInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .interviewButton{
+     
+      width: 3.3vw;
+      transition: 195ms;
+   }
+   
+   .interviewButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .interviewInfo{
+      position: absolute;
+      top:1.1%;
+   
+      font-size: 0.6em;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .menuItem img{
+      padding: 1vw 1vw; 
+   
+      max-width: 100%;
+   }
+   
+   
+   /*------Окно поиска в башке-------*/
+   
+   
+   .windowSearchContainer{
+   
+      padding: 0 2%;
+      width: 30vw;
+   
+   }
+   .windowSearchContainer input{
+      background-color: rgb(176, 176, 176);
+      background-image: url('../img/searchWindow/Group 4.png');
+      background-position: 90%;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      width: 30vw;
+      padding: 0 2%;
+   }
+   
+   
+   /*--------Информация о текущем аккаунте--------*/
+   
+   
+   .accountContainer{
+      
+      display: flex;
+      
+      min-width: 19vw;
+      max-width: 45vw;
+      padding: 0.19% 0;
+      
+   }
+   
+   .messageButton{
+      
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   
+   }
+   
+   .messageButton:hover{
+      
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .notificationButton{
+      padding: 1.4% 0;
+      width: 2.5vw;
+      transition: 195ms;
+   }
+   .notificationButton:hover{
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .messageButton img{
+      padding: 0 16%;
+      max-width:100%;
+   }
+   .notificationButton img{
+      max-width:100%;
+      padding: 0 16%;
+   }
+   .profileNavigationButton{
+      display: flex;
+      align-items: center;
+      padding: 1.4% 0 1.4% 2.5%;
+      
+      width: 13vw;
+      background-image: url('../img/accInfo/profileImage.png');
+      background-repeat: no-repeat ;
+      background-size: contain;
+      background-position: 1.5%;
+      transition: 195ms;
+   }
+   
+   .profileNavigationButton:hover{
+      cursor: pointer;
+      background-color: rgb(44, 44, 44);
+      border-radius: 2px;
+   }
+   
+   .profileImg{
+      min-width: 50%;
+      max-width: 100%;
+      font-size: 0.59em;
+      padding-left: 19%;
+   }
+   
+   .triangleContainer{
+      /* margin-right: 1%; */
+      position: absolute;
+      transform: translate(15.99vw,0.69vw);
+      width: 0;
+      height: 0;
+   }
+   
+   .triangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-top: 3px solid transparent;
+      border-right: 7px solid white;
+      border-bottom: 3px solid transparent;
+   
+   }
+   .downTriangle{
+      
+      max-width: 100%;
+      max-height: 100%;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 7px solid white;
+   
+   }
+   
+   .subMenuAccount{
+      width: 10.55%;
+      position: absolute;
+      transform: translate(7.28vw,2.2vw);
+      background-color:rgb(176, 176, 176);
+      border-radius: 4px;
+   
+      font-size: 0.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color:gray;
+   
+      display: none;
+   }
+   
+   .show {
+      opacity: 0;
+      display: block;
+      animation: show 520ms 1;
+      animation-fill-mode: forwards;
+      animation-delay: 50ms;
+   }
+   @keyframes show {
+      0%{
+         opacity: 0;
+      }
+   
+      100% {
+         opacity: 1;
+      }
+   }
+   
+   .yourFollowing{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourFollowing:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourPodcasts{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourPodcasts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourFotos{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourFotos:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   
+   .yourPosts{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourPosts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   /*--------------------------*/
+   /*------Е---О-----------А-----*/
+   /*---Т----Л-------А---Т------*/
+   /*--------------С---Й--------*/
+   
+   .contentContainer{
+      
+      display: flex;
+      max-width: 600px;
+      margin: 0 auto;
+   }
+   
+   
+   /*------колонка слева------*/
+   
+   
+   .leftBoxContainer{
+      display: flex;
+      flex-direction: column;
+      width: 15vw;
+      
+   }
+   
+   
+   /*------верхний бокс слева------*/
+   
+   
+   .upBox{
+      padding: 10% 7%;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      min-height: 12vw;
+     
+   }
+   
+   .oneItem{
+      background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.7em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .oneItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+      
+   }
+   .oneItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .twoItem{
+      background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.7em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .twoItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+   }
+   .twoItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .threeItem{
+      background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 3.3%;
+      font-size: 0.7em;
+      padding: 2% 0 2% 25%;
+      margin: 5px 0;
+      transition: 295ms;
+   }
+   .threeItem span{
+      color: rgb(180, 177, 177);
+      display: block;
+      font-size:  0.7em;
+   }
+   .threeItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   /*-----------Центральный бокс слева----------*/
+   
+   .centerBox{
+   
+      margin: 5% 0;
+      padding: 10% 0;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      padding: 20% 8%;
+   }
+   
+   .centerBox p{
+      /* //font-weight: bold; */
+      cursor: default ; 
+   }
+   .one{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/first.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      margin-top: 12%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .one:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .two{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/second.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .two:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .three{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/third.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .three:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .four{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/fourth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .four:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .five{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/fifth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      transition: 200ms;
+   }
+   .five:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   .six{
+      font-size: 1em;
+      background-image: url(../img/centerBoxleftBox/sixth.png);
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 2%;
+      padding: 10% 5% 10% 30%;
+      margin-bottom: -12%;
+      transition: 200ms;
+   }
+   .six:hover{
+      cursor: pointer;
+      background-color:rgb(79, 79, 79); 
+      border-radius: 4px;
+   }
+   /*-------Нижний бокс слева--------------*/
+   
+   
+   
+   
+   
+   
+   /*--------Центральные боксы-------------*/
+
+   .contentContainer{
+      display: flex;
+      max-width: 700px;
+      margin: 0 auto;
+
+   }
+   /*--------Окно создания поста-------------*/
+   .centerContainer{
+   
+      display: flex;
+      flex-direction: column;
+   
+      width: 100vw;
+      margin: 0 0.71% 0.71% 0.71%;
+      
+   }
+   
+   .createPostContainer{
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+   
+      background-color: rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      max-width: 100%;
+      height: 2vw;
+      min-height: 10%;
+      max-height: 10%;
+   
+   }
+   .profileImg_createPost{
+      width: 7%;
+      padding: 0 0 0 2%;
+   }
+   .profileImg_createPost img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+   }
+   .input-createPost{
+      
+      width: 55%;
+      height: 2vw;
+      /* border: 1px solid white; */
+   
+   }
+   .input-createPost input{
+      
+      width: 100%;
+      height: 100%;
+      background-color: rgb(176, 176, 176);
+      border-radius: 4px;
+      transition: 200ms;
+   }
+   .input-createPost input:focus{
+      
+      box-shadow: 0px 0px 5px rgb(162, 162, 162);
+      border: 1px solid rgb(162, 162, 162);
+      
+   }
+   .button-createPost{
+   
+      
+      width: 15%;
+      
+      padding: 1%;
+      margin: 0 2% 0 0;
+   
+      background-color: orangered;
+      border-radius: 4px;
+      
+   
+   }
+   
+   .button-createPost button{
+      
+      font-size: 0.5em;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      background-color: orangered;
+      color: white;
+      
+   }
+   
+   
+   /* --------------Блоки постов-------------- */
+   
+   
+   .containerPostAll{
+      background-color: rgb(29, 29, 29);
+      padding: 2%;
+      margin: 1% 0;
+      border-radius: 4px;
+   
+      display: flex;
+      align-items: center;
+   
+   }
+   
+   .ImgPost-container{
+      width: 20%;
+   }
+   .ImgPost-container img{
+      max-width: 100%;
+   }
+   
+   .contentPost-container{
+      width: 80%;
+      
+   }
+   .header-contentPost{
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   
+      font-size: 0.8em;
+   
+   }
+   .header-contentPost span{
+      display:block;
+   }
+   
+   .buttonsSubHeader-contentPost{
+      
+   }
+   .boxButtons-subHeader{
+      margin-top: 1%;
+   }
+   .boxButtons-subHeader button{
+      color: gray;
+      background-color:rgb(67, 67, 67) ;
+      border-radius: 4px;
+      font-size: 0.47em;
+      font-weight: bold;
+      padding: 1% 2%;
+   }
+   
+   .infoAuthorContainerAll {
+      margin-top: 2%;
+      display: flex;
+      align-items: center;
+   }
+   .infoAuthorPostContainer {
+      width: 50%;
+   }
+   .containerInfoAuthor {
+      display: flex;
+   }
+   .containerInfoAuthor img {
+      max-width: 100%;
+      border-radius: 55%;
+      padding: 0.7%;
+      background-color: white;
+   }
+   .name-infoAuthor {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   
+      padding: 0 0 0 2%;
+   }
+   .nameAuthor {
+      display: inline-block;
+      font-size: 14px;
+     
+   }
+   .qanityFollowings {
+      font-size: 10px;
+      color:gray;
+   
+   }
+   .qanityViewsContainer {
+      margin-right: 1vw;
+      width: 15%;
+   }
+   .qanityViewsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   .qanityLikesContainer {
+      width: 15%;
+      margin-right: 1vw;
+   }
+   .qanityLikesContainer span {
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   .qanityCommentsContainer {
+      width: 15%;
+   }
+   .qanityCommentsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.6em;
+   }
+   
+   
+   
+   
+   /*-------Верхний бокс справа--------------*/
+   
+   
+   .rightContainer{
+      width: 17vw;
+      
+      margin: 0 0.71% 0.71% 0;
+   }
+   
+   .meetupsContainer{
+   
+      display:flex;
+      flex-direction: column;
+   
+      width: 100%;
+      height: 31.2vw;
+      background-color:rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      padding: 10% 7%;
+   }
+   .meetupsContainer.hover{
+      cursor: default;
+   }
+   .meetupsContainer button{
+      font-size: 1.2em;
+      color: white;
+      background-color: transparent;
+   }
+   .eventContainer-meetups{
+      display: flex;
+      
+      width: 100%;
+      height: 7vw;
+      margin-top: 5%;
+   }
+   .dateCalendar-eventContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   
+      background-color: rgb(67, 67, 67);
+      width: 24%;
+      min-width: 24%;
+      height: 100%;
+      border-radius: 6px;
+   }
+   .month-dateCalendar{
+      display: block;
+      font-size: 0.8em;
+      text-align: center;
+   
+      padding: 25.65% 0 0 0;
+   }
+   .month-dateCalendar:hover{
+      cursor:default;
+   }
+   .date-dateCalendar{
+      color:rgba(93, 149, 232, 1);
+      display: block;
+      padding: 0 0 50% 0;
+   
+      font-weight: bold;
+      font-size: 1.8em;
+   }
+   .date-dateCalendar:hover{
+      cursor: default;
+   }
+   
+   .eventBox-eventContainer{
+      display: flex;
+      flex-direction: column;
+   
+      margin:0 0 0 6%;
+   }
+   .eventBox-eventContainer span{
+      font-size: 0.5em;
+      font-weight: bold;
+   }
+   .header-eventBox:hover{
+      cursor: default;
+   }
+   .subHeader-eventBox span{
+      font-size: 0.4em;
+      color:gray;
+   }
+   .subHeader-eventBox span:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox{
+      display:flex;
+      align-items: center;
+   }
+   .buttons-eventBox:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox button{
+      font-size: 0.37em;
+      font-weight: bold;
+   
+      background:rgb(67, 67, 67);
+      border-radius: 4px;
+   
+      margin: 1% 3%;
+      padding: 1% 2%;
+   
+   }
+   }
+
+.show {
+   opacity: 0;
+   display: block;
+   animation: show 520ms 1;
+   animation-fill-mode: forwards;
+   animation-delay: 50ms;
+}
+@keyframes show {
+   0%{
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- Мобилки(современные)---------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width:375px){
+
+   body{
+      color:white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+/* Хедер */
+
+
+   header{
+      height: 20vw;
+      margin:0 0 2vw 0;
+   }
+
+   .headContainer{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+   }
+   .know{
+     display: none; 
+   }
+
+   /*------Окно поиска в башке-------*/
+   
+   
+   .windowSearchContainer{
+      position: absolute;
+      left: 10vw;
+
+      padding: 0 2%;
+      width: 30vw;
+
+      background-color: transparent;
+   
+   }
+   .windowSearchContainer input{
+      background-color: transparent;
+      background-image: url('../img/searchWindow/Group 4.png');
+      background-position: 2vw;
+      background-size: 3vw;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      width: 50vw;
+      height: 10vw;
+      padding: 0 0 0 6vw;
+   }
+
+   .windowSearchContainer input:focus{
+      
+      background-color: rgb(42, 42, 42);
+   }
+   
+   
+   /*--------Информация о текущем аккаунте--------*/
+   
+   
+   .accountContainer{
+      
+      display: flex;
+      
+      min-width: 19vw;
+      max-width: 45vw;
+      padding: 0.19% 0;
+      
+   }
+   
+   .messageButton{
+      
+      display: flex;
+      align-items: center;
+      width: 10vw;
+      height: 10vw;
+
+      transition: 195ms;
+   
+   }
+   .messageButton:hover{
+      
+   }
+   .messageButton:active{
+      
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .notificationButton{
+      display: flex;
+      align-items: center;
+      width: 10vw;
+      height: 10vw;
+
+      transition: 195ms;
+   }
+   .notificationButton:hover{
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .messageButton img{
+      padding: 0 16%;
+      max-width:100%;
+   }
+   .notificationButton img{
+      max-width:100%;
+      padding: 0 16%;
+   }
+   .profileNavigationButton{
+      display: flex;
+      align-items: center;
+      padding: 1.4% 0 1.4% 2.5%;
+      
+      width: 12vw;
+      background-image: url('../img/accInfo/profileImage.png');
+      background-repeat: no-repeat ;
+      background-size: contain;
+      background-position: 1.5%;
+      transition: 195ms;
+   }
+   
+   .profileNavigationButton:hover{
+      cursor: pointer;
+      background-color: rgb(44, 44, 44);
+      border-radius: 2px;
+   }
+   
+   .profileImg{
+      display: none;
+   }
+   
+   .triangleContainer{
+      display: none;
+   }
+   
+   .triangle{
+      
+      display: none;
+   
+   }
+   .downTriangle{
+      
+      display: none;
+   
+   }
+   
+   .subMenuAccount{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      transform: translate(-69vw,0vw);
+      background-color:rgb(176, 176, 176);
+      border-radius: 4px;
+   
+      font-size: 1em;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      color:gray;
+   
+      display: none;
+   }
+   
+   .show {
+      opacity: 0;
+      display: block;
+      animation: show 520ms 1;
+      animation-fill-mode: forwards;
+      animation-delay: 50ms;
+   }
+   @keyframes show {
+      0%{
+         opacity: 0;
+      }
+   
+      100% {
+         opacity: 1;
+      }
+   }
+   
+   .yourFollowing{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourFollowing:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourPodcasts{
+      cursor: default;
+      padding: 5% 5%;
+      transition: 125ms;
+   }
+   .yourPodcasts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   .yourFotos{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourFotos:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+   
+   
+   .yourPosts{
+      transition: 125ms;
+      cursor: default;
+      padding: 5% 5%;
+   }
+   .yourPosts:hover{
+      color:rgb(60, 60, 60);
+      cursor: pointer;
+      background-color:rgb(131, 131, 131); 
+      border-radius: 4px;
+      transform: scale(1.05,1.05);
+   }
+
+
+/* Ограничитель контента */
+
+.contentContainer{
+   display: flex;
+
+   flex-direction: column;
+
+   width: 100vw;
+   margin: 1vw auto;
+
+}
+
+/* Нижнее меню */
+
+
+   .menuItem{
+
+      display: flex;
+   
+      justify-content: space-between;
+      align-items: center;
+   
+      width: 100vw;
+      height: 20vw;
+
+      position: fixed;
+      bottom: 0.2vh;
+
+      background-color: rgb(29, 29, 29);
+     
+   }
+   
+   .homeButton{
+      /* display: flex;
+      align-items: center; */
+      
+      padding:5%;
+      
+
+      width: 20vw;
+      transition: 195ms;
+   }
+   .homeButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+   
+      cursor: pointer;
+   }
+   .homeInfo{
+      position: absolute;
+      top:1.259%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .calendarButton{
+     
+      padding: 5%;
+     
+
+      width: 20vw;
+      transition: 195ms;
+   }
+   .calendarButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .calendarInfo{
+      position: absolute;
+      top:1.259%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .groupButton{
+     
+      padding:5%;
+
+      width: 20vw;
+      transition: 195ms;
+   }
+   
+   .groupButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .groupInfo{
+      position: absolute;
+      top:1.259%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .podcastButton{
+      
+      padding:5%;
+      
+
+      width: 20vw;
+      transition: 195ms;
+   }
+   
+   .podcastButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .podcastInfo{
+      position: absolute;
+      top:1.259%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .interviewButton{
+     
+      padding:5%;
+
+      width: 20vw;
+      transition: 195ms;
+   }
+   
+   .interviewButton:hover{
+      border-radius: 4px;
+      background-color: orangered;
+      cursor: pointer;
+   }
+   .interviewInfo{
+      position: absolute;
+      top:1.259%;
+   
+      font-size: 10px;
+      font-weight: bold;
+      color:gray;
+   
+      display:none;
+      
+   }
+   
+   .menuItem img{
+      padding: 1vw 1vw; 
+   
+      max-width: 100%;
+   }
+
+   /* -----------Первая строчка-------------- */
+
+   /*------колонка слева------*/
+   
+   
+   .leftBoxContainer{
+      display: flex;
+
+      flex-direction: column;
+
+      width: 15vw;
+      
+   }
+   
+   
+   /*------верхний бокс слева------*/
+   
+   
+   .upBox{
+
+      display: flex;
+      justify-content: space-around;
+      padding: 5vw 5vw;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      min-height: 12vw;
+      width: 100vw;
+      margin: 0 auto;
+     
+   }
+   
+   .oneItem{
+      background-image: url('../img/upBoxLeftBox/New\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 1%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 10%;
+      margin: 0 5% 0 0;
+      transition: 295ms;
+   }
+   .oneItem span{
+      display: none;
+      
+   }
+   .oneItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .twoItem{
+      background-image: url('../img/upBoxLeftBox/Popular\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 1%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 10%;
+      margin: 0 5% 0 0;
+      transition: 295ms;
+   }
+   .twoItem span{
+      display: none;
+   }
+   .twoItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+   
+   .threeItem{
+      background-image: url('../img/upBoxLeftBox/Following\ Icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 1%;
+      font-size: 1.1em;
+      padding: 2% 0 2% 10%;
+      margin: 0 5% 0 0;
+      transition: 295ms;
+   }
+   .threeItem span{
+      display: none;
+   }
+   .threeItem:hover{
+      background-color: rgb(79, 79, 79);
+      border-radius: 4px;
+      cursor: pointer;
+   }
+
+   .centerBox{
+   
+      margin: 5% 0;
+      padding: 10% 0;
+      background-color:rgb(29, 29, 29) ;
+      border-radius: 4px;
+      padding: 20% 8%;
+
+      display: none;
+   }
+
+   /* ---------------------Контентная часть----------- */
+
+   /*--------Окно создания поста-------------*/
+   
+   .createPostContainer{
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+   
+      background-color: rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      min-width: 100vw;
+      height: 16vw;
+      margin: 5% 0 5% 0;
+
+      /* border: 1px solid white; */
+      
+   
+   }
+   .profileImg_createPost{
+      width: 15vw;
+      padding: 0 0 0 2%;
+   }
+   .profileImg_createPost img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid rgb(255, 255, 255);
+   }
+   .input-createPost{
+      
+      min-width: 45vw;
+      height: 50%;
+      /* border: 1px solid white; */
+   
+   }
+   .input-createPost input{
+      
+      width: 100%;
+      height: 100%;
+      background-color: rgb(176, 176, 176);
+      border-radius: 4px;
+      transition: 200ms;
+   }
+   .input-createPost input:focus{
+      
+      box-shadow: 0px 0px 5px rgb(162, 162, 162);
+      border: 1px solid rgb(162, 162, 162);
+      
+   }
+   .button-createPost{
+   
+      
+      width: 15%;
+      
+      padding: 1%;
+      margin: 0 2% 0 0;
+   
+      background-color: orangered;
+      border-radius: 4px;
+      
+   
+   }
+   
+   .button-createPost button{
+      
+      font-size: 9px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      background-color: orangered;
+      color: white;
+      
+   }
+   
+   
+   /* --------------Блоки постов-------------- */
+   
+   
+   .containerPostAll{
+      width: 100vw;
+      background-color: rgb(29, 29, 29);
+      padding: 1%;
+      margin: 1% 0;
+      border-radius: 4px;
+   
+      display: flex;
+      align-items: center;
+   
+   }
+   
+   .ImgPost-container{
+      width: 20vw;
+      margin: 0 auto;
+   }
+   .ImgPost-container img{
+      max-width: 100%;
+   }
+   
+   .contentPost-container{
+      width: 60vw;
+      margin: 0 auto;
+      padding: 2vw 0;
+      margin-right: 10vw;
+      
+   }
+   .header-contentPost{
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   
+      font-size: 0.89em;
+      text-align:justify;
+   
+   }
+   .header-contentPost span{
+      display:block;
+   }
+   
+   .buttonsSubHeader-contentPost{
+      
+   }
+   .boxButtons-subHeader{
+      text-align: center;
+      margin-top: 1%;
+   }
+   .boxButtons-subHeader button{
+      color: gray;
+      background-color:rgb(67, 67, 67) ;
+      border-radius: 4px;
+      font-size: 0.67em;
+      font-weight: bold;
+      padding: 1% 2%;
+   }
+   
+   .infoAuthorContainerAll {
+      margin-top: 2%;
+      display: flex;
+      align-items: center;
+   }
+   .infoAuthorPostContainer {
+      width: 15vw;
+   }
+   .containerInfoAuthor {
+      display: flex;
+   }
+   .containerInfoAuthor img {
+      max-width: 100%;
+      border-radius: 55%;
+      padding: 0.7%;
+      background-color: white;
+   }
+   .name-infoAuthor {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   
+      padding: 0 0 0 2%;
+   }
+   .nameAuthor {
+      display: inline-block;
+      font-size: 14px;
+     
+   }
+   .qanityFollowings {
+      font-size: 10px;
+      color:gray;
+   
+   }
+   .qanityViewsContainer {
+      margin-right: 1vw;
+      width: 15%;
+   }
+   .qanityViewsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.58em;
+   }
+   
+   .qanityLikesContainer {
+      width: 15%;
+      margin-right: 1vw;
+   }
+   .qanityLikesContainer span {
+      width: 100%;
+      color: gray;
+      font-size: 0.58em;
+   }
+   
+   .qanityCommentsContainer {
+      width: 15%;
+   }
+   .qanityCommentsContainer span{
+      width: 100%;
+      color: gray;
+      font-size: 0.58em;
+   }
+   
+   
+   
+   
+   /*-------Верхний бокс справа--------------*/
+   
+   
+   .rightContainer{
+      width: 100vw;
+      height: 120vw;
+      
+      margin: 5% 0 5% 0;
+   }
+   
+   .meetupsContainer{
+   
+      display:flex;
+      flex-direction: column; 
+   
+      width: 100%;
+      height: 90vw;
+      background-color:rgb(29, 29, 29);
+      border-radius: 4px;
+   
+      padding: 10% 7%;
+   }
+   .meetupsContainer.hover{
+      cursor: default;
+   }
+   .meetupsContainer button{
+      font-size: 1.6em;
+      color: white;
+      background-color: transparent;
+   }
+   .eventContainer-meetups{
+      display: flex;
+      
+      width: 100%;
+      height: 8vw;
+      margin-top: 10vw;
+   }
+   .dateCalendar-eventContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   
+      background-color: rgb(67, 67, 67);
+      width: 2vw;
+      height:17vw;
+      border-radius: 6px;
+   }
+   .month-dateCalendar{
+      display: block;
+      font-size: 1em;
+      text-align: center;
+   
+      padding: 25.65% 0 0 0;
+   }
+   .month-dateCalendar:hover{
+      cursor:default;
+   }
+   .date-dateCalendar{
+      color:rgba(93, 149, 232, 1);
+      display: block;
+      padding: 0 0 50% 0;
+   
+      font-weight: bold;
+      font-size: 1.8em;
+   }
+   .date-dateCalendar:hover{
+      cursor: default;
+   }
+   
+   .eventBox-eventContainer{
+      display: flex;
+      flex-direction: column;
+   
+      margin:0 0 0 6%;
+   }
+   .eventBox-eventContainer span{
+      font-size: 0.7em;
+      font-weight: bold;
+   }
+   .header-eventBox:hover{
+      cursor: default;
+   }
+   .subHeader-eventBox span{
+      font-size: 0.66em;
+      color:gray;
+   }
+   .subHeader-eventBox span:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox{
+      display:flex;
+      align-items: center;
+   }
+   .buttons-eventBox:hover{
+      cursor: default;
+   }
+   
+   .buttons-eventBox button{
+      font-size: 0.56em;
+      font-weight: bold;
+   
+      background:rgb(67, 67, 67);
+      border-radius: 4px;
+   
+      margin: 1% 3%;
+      padding: 1% 2%;
+   
+   }
+
+}
