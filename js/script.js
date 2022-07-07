@@ -195,7 +195,7 @@ const namePostAuthor = document.querySelectorAll('.nameAuthor'),
 
 const nullBox =document.querySelectorAll('.qanityNoneContainer');
 
-if(mobileWidth <= 375){
+if(mobileWidth <= 425){
 
             oneItemBox.innerHTML = "Newest";
             twoItemBox.innerHTML = "Popular";
